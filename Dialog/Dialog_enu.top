@@ -1,0 +1,10 @@
+topic: ~Dialog()
+language: enu
+
+concept:(names) [Aleksi Aino Kirsikka Nasim Aparajita Oprah Jutta Pouya Chathura Noora Iikka Jari Nao]
+concept:(greetings) [hey hi hello howdy]
+
+u:(~greetings) ^rand[~greetings] $reco_face=1
+u:(e:face/learnface) I don't think we've met. \pau=500\ What is your name?
+    u1:([_~names]) $1 $name=$1
+    

@@ -1,0 +1,9 @@
+topic: ~Dialog()
+language: fif
+
+concept:(names) [Aleksi Aino Kirsikka Nasim Aparajita Oprah Jutta Pouya Chathura Noora Iikka Jari Nao]
+concept:(greetings) [hei moi moikka helou moro heippa]
+
+u:(~greetings) ^rand[~greetings] $reco_face=1
+u:(e:face/learnface) Emme ole tainneet tavata \pau=500\ Mikä sinun nimesi on?
+    u1:([_~names]) $1 $name=$1
